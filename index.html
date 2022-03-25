@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     #main {
+         /* border: solid 2px red; */
+         display: flex;
+         justify-content: center;
+         padding-top: 4%;
+     }
+     .box {
+         /* border: solid 2px black; */
+         width: 33%;
+         padding-right: 8%;
+         padding-left: 3%;
+     }
+     h3 {
+         font-family: Arial, Helvetica, sans-serif;
+     }
+
+     .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-bottom: 20px;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(177, 151, 3);
+  cursor: pointer;
+}
+
+#slide {
+    display: flex;
+    flex-direction: row !important;
+    
+}
+#slide1 {
+ width: 33%;
+}
+#slide2 {
+    width: 33%;
+    text-align: center;
+}
+#slide3 {
+    width: 33%; 
+    text-align: right;
+}
+   
+</style>
+<body>
+    <div id="main">
+        <div class="box">
+            <h3>DESCRIPTION</h3>
+            <p>There's one simple reason we call this everyday oxford; we wear them preety much every single dau</p>
+            <h3>MATERIAL</h3>
+            <p>Just the rigid amount of sturdy for year round wear. Soft to the touch but built for a decade of solid wear . oxford is a perfectly versatile faric that looks just as good as good pressed as it does pulled off the back chair . While traditional cotton uses 25 percent of the world's pesticides , our organic cotton doesn't use a drox , A better shirt , responsibly built for a long haul </p>
+            <h3>GARMENT WEIGHT</h3>
+            <p>Your daily driver , Bulkier than the average </p>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+              </div >
+             <div id="slide"><div id="slide1">Light</div><div id="slide2">Medium</div><div id="slide3">Heavy</div></div>
+        </div>
+        <div class="box">
+            <h3>SPECIFICATIONS</h3>
+            <li>6-cot, 100% organic cotton</li>
+            <li>Made from our burly roughy oxford</li>
+            <li>Our signature jack button down collar</li>
+            <li>Single rounded chest pocket</li>
+            <li>double-neeedle felled construction throughout</li>
+            <li>Natural Buttons</li>
+            <li>Lock-stiched buttons and buttonholes</li>
+            <li>Shorter length to be worn untucked</li>
+            <li>Tailored fit and high armhole</li>
+            <li>No pleats for easy ironong ans clean lines</li>  
+            <li>Wash cold and tumble dry low</li>  
+            <li>Made in China</li>
+        </div>
+        <div class="box">
+            <h3>ESSENTIAL</h3>
+            <P>This product is a Taylor Stitch Essential that we aim to always keep in stock . Essentials are out tried and true products that we wear damn near everyday. If your size is currently out-of-stocks , please submit your email adress to the "Notify Me" tab . We restock Essentials regularly . In stock sizes are available for immediate shipping.</P>
+        </div>
+    </div>
+</body>
+</html>
